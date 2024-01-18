@@ -1,0 +1,42 @@
+@import './ForgotPassword/ForgotPassword';
+@import './Login/Login';
+@import './ErrorAlert/ErrorAlert';
+@import './Register/Register';
+@import './ResetPassword/ResetPassword';
+@import './HeroSection/HeroSection';
+@import './CarCard/CarCard';
+@import './DashboardNavbar/DashboardNavbar';
+@import './DeleteItemModalContent/DeleteItemModalContent';
+@import './BookNowModalContent/BookNowModalContent';
+
+.input{
+    margin-bottom: 20px;
+    input{
+        padding: 10px 12px;
+    }
+}
+
+.submit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    :first-child{
+        min-width: 100%;
+    }
+    .btnSubmit{
+        margin: 20px 0 5px 0px; 
+        padding: 10px 20px;
+        width: 100%;
+        background-color: #d65A31;
+        border: none;
+        &:active{
+            background-color: darken(#d65a31, 10%);
+        }
+    }
+    
+}
+
+.link {
+    color: black;
+}
+

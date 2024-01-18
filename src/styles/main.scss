@@ -1,0 +1,23 @@
+@import "~bootstrap/scss/bootstrap";
+@import "./reset";
+
+@import "../Layouts/Layouts";
+@import "../pages/Pages";
+@import "../partials/partials";
+@import "../components/components";
+
+body {
+  font-family: ui-sans-serif, system-ui,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background-color: black;
+   h1,h2,h3,h4,h5,h6, p,span{
+    color: white;
+   }
+}
+
+.icons {
+  width: 30px;
+  height: 30px;
+  color: rgb(125, 125, 125);
+}

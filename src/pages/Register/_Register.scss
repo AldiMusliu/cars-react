@@ -1,0 +1,47 @@
+.register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  min-height: 100vh;
+  .registerComponent {
+    width: 100%;
+    border-radius: 10px;
+    padding: 50px 15px;
+    margin: 50px auto;
+    max-width: 390px;
+    box-shadow: 22px 18px 30px 8px rgba(0, 0, 0, 0.43);
+    background-color: #eee;
+    h1 {
+      color: black;
+      text-align: center;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 580px) {
+  .register {
+    .registerComponent {
+      padding: 60px 20px;
+      max-width: 420px;
+    }
+  }
+}
+@media screen and (min-width: 690px) {
+  .register {
+    .registerComponent {
+      padding: 70px 25px;
+      max-width: 480px;
+    }
+  }
+}
+@media screen and (min-width: 960px) {
+  .register {
+    .registerComponent {
+      padding: 80px 35px;
+      max-width: 550px;
+    }
+  }
+}

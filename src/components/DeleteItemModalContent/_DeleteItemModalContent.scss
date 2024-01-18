@@ -1,0 +1,22 @@
+.deleteItemModalContent{
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    &-title{
+        color: black;
+    }
+    &-subtitle{
+        color: rgba(0, 0, 0, 0.5);
+    }
+    &-buttons{
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 10px;
+        button{
+            width: 120px;
+        }
+    }
+}

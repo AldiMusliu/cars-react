@@ -1,0 +1,58 @@
+header {
+  background-color: black;
+  color: white;
+  position: absolute;
+  z-index: 1;
+}
+
+.headerContent {
+  padding: 24px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+    a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    &:hover{
+        color: #d65a31;
+    }
+    }
+  .headerIcon {
+    font-size: 28px;
+  }
+  &-register {
+    padding: 12px 20px;
+    background-color: white;
+    color: black !important;
+    border-radius: 8px;
+    &:hover {
+        background-color: #d65a31;
+        color: white !important;
+    }
+  }
+
+  .headerLinks {
+    display: flex;
+    align-items: center;
+    gap: 116px;
+
+    .link {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+}
+
+.loginRegister {
+    display: flex;
+    gap: 26px;
+    align-items: center;
+}
+}
+
+.container {
+  width: calc(100vw - 50px);
+  margin: 0 auto;
+}

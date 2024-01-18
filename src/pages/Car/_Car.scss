@@ -1,0 +1,76 @@
+.car {
+  padding: 50px 0;
+  &-title {
+    color: white;
+    font-weight: 600;
+    font-size: 45px;
+  }
+  &-content {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 15px;
+    align-items: center;
+    &-details {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      p {
+        font-weight: 300;
+      }
+      span {
+        font-weight: 600;
+      }
+    }
+    &-photo {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  &-buttons{
+    margin-top: 15px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: start;
+    button{
+      border: none;
+      padding: 15px 30px;
+      border-radius: 25px;
+    }
+  }
+}
+@media screen and (min-width: 900px) {
+  .car {
+    padding: 70px 0;
+    &-title {
+      padding-bottom: 40px;
+    }
+    &-content {
+      flex-direction: row;
+      gap: 30px;
+
+      &-details {
+        flex: 1;
+      }
+      &-photo {
+        flex: 1;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .car {
+    padding: 100px 0;
+    &-title {
+      padding-bottom: 50px;
+    }
+    &-content {
+      &-details {
+      }
+      &-photo {
+      }
+    }
+  }
+}

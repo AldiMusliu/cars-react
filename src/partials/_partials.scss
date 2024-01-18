@@ -1,0 +1,7 @@
+@import './Header/Header';
+@import './Footer/Footer';
+
+.container{
+    width: calc(100vw - 50px);
+    margin: 0 auto;
+}

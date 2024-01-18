@@ -1,0 +1,46 @@
+.dashboardLayout {
+  background-color: black;
+  color: white;
+  position: relative;
+  &-navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 300px;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  &-navbarShowButton {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  &-navbarHideButton {
+    position: absolute;
+    right: 0px;
+    top:0px;
+    width: 50px;
+    height: 50px;
+    color: black;
+  }
+  &-outlet{
+    padding:30px 10px;
+    min-height: 100vh;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .dashboardLayout {
+    &-navbarShowButton,
+    &-navbarHideButton {
+      display: none;
+    }
+    &-navbar{
+        display: block!important;
+    }
+    &-outlet{
+      padding:50px 50px 50px  350px;
+      min-height: 100vh;
+    }
+  }
+}

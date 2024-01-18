@@ -1,0 +1,45 @@
+.login{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:  0 auto;
+    h1{
+        color: black;
+       text-align: center;
+       font-weight: 600;
+       margin-bottom: 30px;
+    }
+}
+.loginComponent{
+    background-color: #EEE;
+    width: 100%;
+    border-radius: 10px;
+    padding: 50px 15px;
+    max-width: 390px;
+    box-shadow: 22px 18px 30px 8px rgba(0,0,0,0.43);
+}
+@media screen and (min-width: 580px) {
+    .loginComponent{
+        padding: 60px 20px;
+        max-width: 420px;
+    }
+}
+@media screen and (min-width: 690px) {
+    .loginComponent{
+        padding: 70px 25px;
+        max-width: 480px;
+    }
+}
+@media screen and (min-width: 960px) {
+    .loginComponent{
+        padding: 80px 35px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .login{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

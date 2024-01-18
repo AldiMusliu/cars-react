@@ -1,0 +1,54 @@
+.cars {
+  padding: 50px 0;
+  &-filter {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    white-space: nowrap;
+  }
+  &-content {
+    display: grid;
+    gap: 15px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .cars {
+    padding: 60px 0;
+    &-filter {
+        padding: 15px 0;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .select {
+        max-width: 300px;
+      }
+    }
+    &-content {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+@media screen and (min-width: 900px) {
+  .cars {
+    padding: 65px 0;
+    &-filter{
+        padding: 18px 0;
+    }
+    &-content {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 35px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cars {
+    padding: 70px 0;
+    &-filter{
+        padding: 20px 0 30px 0;
+    }
+    &-content {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}

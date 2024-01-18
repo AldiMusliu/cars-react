@@ -1,0 +1,35 @@
+.faqs {
+  padding-top: 80px;
+  margin-bottom: 140px;
+  text-align: center;
+  border-top: 0.1px solid #8c93a246;
+
+  &-title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 22px;
+  }
+
+  p {
+    color: #8c93a2;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+  }
+
+  a {
+    color: #6b7280;
+    text-decoration: none;
+    &:hover {
+      color: #d65a31;
+      text-decoration: underline;
+    }
+  }
+
+
+}
+
+.faqsContainer{
+  width: 50%;
+  margin: 0 auto;
+}

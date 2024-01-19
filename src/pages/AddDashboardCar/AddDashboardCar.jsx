@@ -14,6 +14,10 @@ const AddDashboardCar = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    if (!name || !model || !seats || !description || !priceRent || !images) {
+      window.alert("Please fill in all fields before submitting.");
+      return;
+    }
     const formData = new FormData();
     formData.append("name", name);
     formData.append("model", model);
@@ -25,8 +29,17 @@ const AddDashboardCar = () => {
     const config = {
       data: formData,
     };
-    await api.call(endpoints.addCar, config);
+
+    try {
+      await api.call(endpoints.addCar, config);
+      window.alert("Your changes have been completed successfully!");
+      window.location.reload(); // Reload the page immediately
+    } catch (error) {
+      // Handle any unexpected errors here
+      console.error("Error submitting form:", error);
+    }
   };
+
   return (
     <Form onSubmit={handleSubmit}>
       <Form.Group className="mb-3" controlId="name">

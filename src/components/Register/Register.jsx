@@ -28,9 +28,7 @@ const RegisterForm = ({ submit, setMessage }) => {
     if (!emailRegex.test(email)) {
       localErrors.push('Email is not valid!')
     }
-    if (!passwordRegex.test(password)) {
-      localErrors.push('Password must contain a number and a character')
-    }
+    
     if (confPassword !== password) {
       localErrors.push('Passwords do not match')
     }

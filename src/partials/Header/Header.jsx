@@ -16,11 +16,12 @@ const Header = () => {
       <div className="headerContent container">
         <div className="headerLinks">
           <NavLink to="./" className="headerIcon">
-            ADEX
+            Chill Wheels
           </NavLink>
           <div className="link">
             <NavLink to="/cars">Cars</NavLink>
             <NavLink to="/faq">FAQs</NavLink>
+            <NavLink to="/aboutUs">About Us</NavLink>
           </div>
         </div>
         {token ? (

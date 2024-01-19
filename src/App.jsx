@@ -19,6 +19,7 @@ import VerifyAccount from "./pages/VerifyAccount/VerifyAccount";
 import ForgotPassword from "./pages/ForgotPassword/ForgotPassword";
 import { useEffect } from "react";
 import AddDashboardCar from "./pages/AddDashboardCar/AddDashboardCar";
+import AboutUs from "./pages/AboutUs/AboutUs";
 
 function App() {
   useEffect(()=>{
@@ -42,6 +43,7 @@ function App() {
             <Route path="cars" element={<Cars />} />
             <Route path="cars/:carId" element={<Car />} />
             <Route path="faq" element={<FAQ />} />
+            <Route path ="aboutUs" element={<AboutUs />}/>
           </Route>
           {(localStorage.getItem("token")&&localStorage.getItem('role')==='ADMIN' )&& (
             <Route path="dashboard" element={<DashboardLayout />}>

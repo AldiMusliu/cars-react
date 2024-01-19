@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer-part1">
           <NavLink to="./" className="headerIcon">
-            ADEX
+            Chill Wheels
           </NavLink>
           <div className="links">
             <NavLink to="/cars">Cars</NavLink>

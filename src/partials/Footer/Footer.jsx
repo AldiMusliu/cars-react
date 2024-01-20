@@ -13,6 +13,7 @@ const Footer = () => {
           <div className="links">
             <NavLink to="/cars">Cars</NavLink>
             <NavLink to="/faq">FAQs</NavLink>
+            <NavLink to="/aboutUs">About Us</NavLink>
           </div>
         </div>
         <p className="footer-part2">

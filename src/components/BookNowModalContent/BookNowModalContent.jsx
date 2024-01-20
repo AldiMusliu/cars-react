@@ -5,7 +5,7 @@ const BookNowModalContent = (props) => {
   
   return (
     <div className="bookNowModalContent">
-      <h5 className="bookNowModalContent-title">Please choose you start and end date for your book</h5>
+      <h5 className="bookNowModalContent-title">Please choose your start and end date for your book</h5>
       <form >
       <Form.Group controlId="formFile" className="mb-3">
         <Form.Label>Start Date:</Form.Label>

@@ -4,6 +4,7 @@ import React from "react";
 import { useState } from "react";
 import CostumModal from "../../components/CostumModal";
 import BookNowModalContent from "../../components/BookNowModalContent/BookNowModalContent";
+import BuyNowModalContent from "../../components/BuyNowModalContent/BuyNowModalContent";
 
 const Car = () => {
   const navigate=useNavigate()
@@ -15,10 +16,11 @@ const Car = () => {
       setCar(result.data);
     }
   };
-  const [modalShow, setModalShow] = useState(false);
+  const [bookNowModalShow, setBookNowModalShow] = useState(false);
+  const [buyNowModalShow, setBuyNowModalShow] = useState(false);
   const handleBookNowBtnClick=()=>{
     if(localStorage.getItem('token')){
-      setModalShow(true)
+      setBookNowModalShow(true)
     }
     else(
       navigate('/login')
@@ -26,7 +28,7 @@ const Car = () => {
   }
   const handleBuyNowBtnClick=()=>{
     if(localStorage.getItem('token')){
-
+      setBuyNowModalShow(true)
     }
     else(
       navigate('/login')
@@ -54,9 +56,13 @@ const Car = () => {
             {car?.priceSell}
           </p>
           <p>
-            <span>Is Available: </span>
-            {car?.available}
-          </p>
+  <span>Is Available: </span>
+  {car?.available ? (
+    <span style={{ color: 'green' }}>Yes</span>
+  ) : (
+    <span style={{ color: 'red' }}>No</span>
+  )}
+</p>
 
           <p>
             <span>Seats: </span>
@@ -69,10 +75,18 @@ const Car = () => {
         <button onClick={handleBookNowBtnClick}>Book Now</button>
         <button onClick={handleBuyNowBtnClick}>Buy Now</button>
       </div>
+      
       <CostumModal
-        modalBody={<BookNowModalContent setModalShow={setModalShow} />}
-        show={modalShow}
-        onHide={() => setModalShow(false)}
+        modalBody={<BookNowModalContent setModalShow={setBookNowModalShow} />}
+        show={bookNowModalShow}
+        onHide={() => setBookNowModalShow(false)}
+        
+      />
+      <CostumModal
+        modalBody={<BuyNowModalContent setModalShow={setBuyNowModalShow} />}
+        show={buyNowModalShow}
+        onHide={() => setBuyNowModalShow(false)}
+        
       />
     </div>
   );

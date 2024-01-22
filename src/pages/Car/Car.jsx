@@ -49,20 +49,20 @@ const Car = () => {
           </p>
           <p>
             <span>Price For Rent: </span>
-            {car?.priceRent}
+            {car?.priceRent+"$"}
           </p>
           <p>
             <span>Price For Sell: </span>
-            {car?.priceSell}
+            {car?.priceRent*333+"$"}
           </p>
           <p>
-  <span>Is Available: </span>
-  {car?.available ? (
-    <span style={{ color: 'green' }}>Yes</span>
-  ) : (
-    <span style={{ color: 'red' }}>No</span>
-  )}
-</p>
+            <span>Is Available: </span>
+            {car?.available ? (
+              <span style={{ color: 'green' }}>Yes</span>
+            ) : (
+              <span style={{ color: 'red' }}>No</span>
+            )}
+          </p>
 
           <p>
             <span>Seats: </span>

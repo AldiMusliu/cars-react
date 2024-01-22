@@ -10,7 +10,7 @@ const CarCard = ({car}) => {
     <div className="carCard-content">
       <p className="info"><span>Name: </span>{car?.name}</p>
       <p className="info"><span>Model: </span>{car?.model}</p>
-      <p className="info"><span>Price For Rent: </span>{car?.priceRent}</p>
+      <p className="info"><span>Price For Rent: </span>{car?.priceRent+"$"}</p>
       <p className="info"><span>Seats: </span>{car?.seats}</p>
       {car?.available&&<p className="available">Available</p>}
       {!car?.available&&<p className="available" style={car?.available?{}:{backgroundColor:'red'}}>Not Available</p>}

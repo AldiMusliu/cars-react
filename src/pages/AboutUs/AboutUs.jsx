@@ -1,7 +1,7 @@
 import './_AboutUs.scss'; 
 const AboutUs = () => {
   return (
-    <div className="about-us">
+    <div className ="about-us container">
       <h2>Welcome to Our Company</h2>
       <p>
         At Our Company, we are passionate about providing top-notch car rental and sales services.

@@ -8,11 +8,12 @@ const Footer = () => {
       <div className="container">
         <div className="footer-part1">
           <NavLink to="./" className="headerIcon">
-            ADEX
+            Chill Wheels
           </NavLink>
           <div className="links">
             <NavLink to="/cars">Cars</NavLink>
             <NavLink to="/faq">FAQs</NavLink>
+            <NavLink to="/aboutUs">About Us</NavLink>
           </div>
         </div>
         <p className="footer-part2">

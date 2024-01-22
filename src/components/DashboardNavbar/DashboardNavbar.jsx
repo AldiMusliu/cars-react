@@ -16,6 +16,7 @@ const DashboardNavbar = ({ setNavbarShow }) => {
       <NavLink to="" end>Dashboard</NavLink>
       <NavLink to="users">Users</NavLink>
       <NavLink to="cars">Cars</NavLink>
+      <NavLink to="../../">Home</NavLink>
     </div>
   );
 };

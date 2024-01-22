@@ -1,0 +1,47 @@
+/* Add some spacing to the top and bottom of the container */
+.about-us {
+  background-color: #000000;
+  color: #fff; /* Change text color to white for better contrast */
+  padding: 50px 0;
+  text-align: center; /* Center the content */
+}
+
+/* Increase the font size and add margin to the heading for emphasis */
+.about-us h2 {
+  font-size: 36px; /* Slightly reduce font size for better readability */
+  margin-bottom: 20px; /* Maintain a reasonable margin */
+}
+
+/* Adjust the font size and spacing for subheadings */
+.about-us h3 {
+  font-size: 24px; /* Increase font size for subheadings */
+  margin-top: 30px;
+  margin-bottom: 15px; /* Reduce margin for a more compact look */
+}
+
+/* Increase the line height for better paragraph readability */
+.about-us p {
+  font-size: 18px;
+  line-height: 1.6; /* Adjust line height for improved readability */
+  margin-bottom: 20px;
+}
+
+/* Use a softer color for links and add a transition effect on hover */
+.about-us a {
+  color: #d65a31; /* Change to your preferred link color */
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.about-us a:hover {
+  color: #ff7f4f; /* Darker color on hover */
+  text-decoration: underline;
+}
+
+/* Center the container and provide some spacing */
+.container {
+  width: 80%; /* Adjust the width as needed */
+  max-width: 1200px; /* Add a max-width for larger screens */
+  margin: 0 auto;
+}

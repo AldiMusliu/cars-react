@@ -39,8 +39,9 @@ const DashboardCars = () => {
                 </p>
                 <p className="info">
                   <span>Price For Rent: </span>
-                  {car?.priceRent}
+                  {car?.priceRent+"$"}
                 </p>
+                
                 <p className="info">
                   <span>Seats: </span>
                   {car?.seats}
